@@ -1,0 +1,25 @@
+.product-container {
+  display: flex;
+  margin-top: 50px;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header {
+  display: flex;
+  align-items: flex-start;
+  background-color: gray;
+}
+
+nav ol {
+  display: flex;
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: gray;
+}
