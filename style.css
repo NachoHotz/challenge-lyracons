@@ -7,10 +7,16 @@
   justify-content: space-evenly;
 }
 
+.no-display {
+  display: none;
+}
+
 header {
   display: flex;
   align-items: flex-start;
-  background-color: gray;
+  background: #C4C4C4 0% 0% no-repeat padding-box;
+  width: 100%;
+  opacity: 0.7;
 }
 
 nav ol {
@@ -21,10 +27,22 @@ nav ol {
 button {
   border: none;
   outline: none;
-  background-color: gray;
+  background-color: #C4C4C4;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 #sidebar {
   background-color: #C4C4C4;
-  width: 500px;
+  width: 200px;
+  height: 619px;
+  text-align: center;
+}
+
+#btn-3:hover+#sidebar {
+  background-color: #000;
 }

@@ -84,6 +84,11 @@ function createProduct(product) {
   return productContainer;
 }
 
+const productContainer = document.querySelector('.product-container');
+const button2 = document.getElementById('btn-2');
+
+button2.addEventListener('click', () => productContainer.className = 'no-display');
+
 function mapProducts(products) {
   return products.map(createProduct);
 }
