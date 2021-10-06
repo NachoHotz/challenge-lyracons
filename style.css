@@ -1,18 +1,44 @@
+body {
+  font-family: Lato;
+  padding: 0;
+  margin: 0;
+}
+
 .product-container {
   display: flex;
-  margin-top: 50px;
-  flex-flow: row wrap;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: space-evenly;
 }
 
-header {
+.product {
   display: flex;
-  align-items: flex-start;
+  flex-direction: column;
+  border: 1px solid #000000;
+  width: 150px;
+  text-align: left;
+  background: #EAEAEA 0% 0% no-repeat;
+  padding: 10px;
+  font: normal normal normal 12px/15px Lato;
+}
+
+.product img {
+  margin-bottom: 5px;
+}
+
+.product p {
+  margin: 2px;
+  text-align: flex-start;
+}
+
+.product button {
+  font-size: 12px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+header {
   background: #C4C4C4 0% 0% no-repeat padding-box;
   width: 100%;
-  opacity: 0.7;
 }
 
 nav ol {
@@ -22,10 +48,10 @@ nav ol {
 
 button {
   border: none;
-  outline: none;
   background-color: #C4C4C4;
   font-size: 1rem;
   font-weight: bold;
+  opacity: 1;
 }
 
 button:hover {
@@ -33,12 +59,10 @@ button:hover {
 }
 
 #sidebar {
-  background-color: #C4C4C4;
+  background-color: #CA5310;
   width: 200px;
   height: 619px;
+  vertical-align: top;
+  margin-left: 100px;
   text-align: center;
-}
-
-#btn-3:hover+#sidebar {
-  background-color: #000;
 }

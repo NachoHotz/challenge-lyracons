@@ -3,7 +3,7 @@ var products = [];
 for (var i = 0; i < 8; i++) {
   products.push({
     title: 'Título de producto',
-    img: '',
+    img: './depositphotos_4653663-stock-illustration-black-headphones-isolated-on-white.jpg',
     brand: 'Marca',
     price: '12.345,00'
   })
