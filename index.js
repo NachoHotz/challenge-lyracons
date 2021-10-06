@@ -1,61 +1,13 @@
-var products = [
-  {
-    id: 1,
+var products = [];
+
+for (var i = 0; i < 8; i++) {
+  products.push({
     title: 'Título de producto',
     img: '',
     brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 2,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 3,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 4,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 5,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 6,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 7,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-  {
-    id: 8,
-    title: 'Título de producto',
-    img: '',
-    brand: 'Marca',
-    price: 1234500,
-  },
-];
+    price: '12.345,00'
+  })
+}
 
 function createProduct(product) {
   const productContainer = document.createElement('div');
@@ -66,7 +18,8 @@ function createProduct(product) {
   productImg.src = product.img;
   productImg.alt = 'product';
 
-  const productTitle = document.createElement('h5');
+  const productTitle = document.createElement('p');
+  productTitle.id = 'productTitle';
   productTitle.textContent = product.title;
 
   const productBrand = document.createElement('p');
@@ -76,10 +29,15 @@ function createProduct(product) {
   productPrice.id = 'price';
   productPrice.textContent = `$ ${product.price}`;
 
+  const productBtn = document.createElement('button');
+  productBtn.id = 'productBtn';
+  productBtn.textContent = 'COMPRAR';
+
   productContainer.appendChild(productImg);
   productContainer.appendChild(productTitle);
   productContainer.appendChild(productBrand);
   productContainer.appendChild(productPrice);
+  productContainer.appendChild(productBtn);
 
   return productContainer;
 }
