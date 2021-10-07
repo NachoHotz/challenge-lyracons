@@ -3,7 +3,7 @@ var products = [];
 for (var i = 0; i < 8; i++) {
   products.push({
     title: 'Título de producto',
-    img: './depositphotos_4653663-stock-illustration-black-headphones-isolated-on-white.jpg',
+    img: './img/headphones_sony.jpg',
     brand: 'Marca',
     price: '12.345,00'
   })
@@ -48,7 +48,10 @@ const sidebar = document.getElementById('sidebar');
 const button2 = document.getElementById('btn-2');
 const button4 = document.getElementById('btn-4');
 
-button2.addEventListener('click', () => productContainer.style.display = 'none');
+button2.addEventListener('click', () => {
+  productContainer.style.display = 'none';
+  sidebar.style.display = 'none';
+});
 button4.addEventListener('click', () => sidebar.innerHTML = 'Hola Mundo!');
 
 function mapProducts(products) {
