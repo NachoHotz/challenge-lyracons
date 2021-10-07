@@ -10,7 +10,7 @@ for (var i = 0; i < 8; i++) {
 }
 
 function createProduct(product) {
-  const productContainer = document.createElement('div');
+  const productContainer = document.createElement('article');
   productContainer.className = 'product';
 
   const productImg = document.createElement('img');
