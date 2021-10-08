@@ -43,11 +43,19 @@ function createProduct(product) {
 }
 
 const mainContainer = document.querySelector('.main-container');
+const sidebar = document.getElementById('sidebar');
 
 const button2 = document.getElementById('btn-2');
+const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
 
 button2.addEventListener('click', () => (mainContainer.style.display = 'none'));
+button3.addEventListener(
+  'mouseover',
+  () =>
+    (sidebar.style.backgroundColor =
+      '#' + Math.floor(Math.random() * 16777215).toString(16)),
+);
 button4.addEventListener('click', () => (sidebar.innerHTML = 'Hola Mundo!'));
 
 function mapProducts(products) {

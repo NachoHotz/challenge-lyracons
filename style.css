@@ -96,19 +96,13 @@ button:hover {
 
 #sidebar {
   background-color: var(--sidebar-color);
-  width: 250px;
+  width: 270px;
   height: 655px;
   vertical-align: top;
   margin-top: 20px;
   margin-left: 39px;
   text-align: center;
   font-size: 1.5rem;
-}
-
-#btn-3:hover {
-  background-color: var(--product-secondary-color);
-  color: var(--sidebar-font-secondary-color);
-  transition: 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
