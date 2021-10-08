@@ -42,16 +42,12 @@ function createProduct(product) {
   return productContainer;
 }
 
-const productContainer = document.querySelector('.product-container');
-const sidebar = document.getElementById('sidebar');
+const mainContainer = document.querySelector('.main-container');
 
 const button2 = document.getElementById('btn-2');
 const button4 = document.getElementById('btn-4');
 
-button2.addEventListener('click', () => {
-  productContainer.style.display = 'none';
-  sidebar.style.display = 'none';
-});
+button2.addEventListener('click', () => mainContainer.style.display = 'none');
 button4.addEventListener('click', () => sidebar.innerHTML = 'Hola Mundo!');
 
 function mapProducts(products) {
