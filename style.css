@@ -1,3 +1,11 @@
+:root {
+  --navbar-color: #C4C4C4;
+  --sidebar-color: #CA5310;
+  --product-bg-color: #EAEAEA;
+  --product-secondary-color: #000000;
+  --sidebar-font-secondary-color: #ffffff;
+}
+
 body {
   font-family: Lato;
   margin: 0;
@@ -5,7 +13,7 @@ body {
 }
 
 header {
-  background: #C4C4C4 0% 0% no-repeat padding-box;
+  background: var(--navbar-color) 0% 0% no-repeat padding-box;
   width: 100%;
   height: 53px;
 }
@@ -48,11 +56,11 @@ nav ol li {
 .product {
   display: flex;
   flex-direction: column;
-  border: 1px solid #000000;
+  border: 1px solid var(--product-secondary-color);
   width: 201px;
   height: 270px;
   text-align: left;
-  background: #EAEAEA 0% 0% no-repeat;
+  background: var(--product-bg-color) 0% 0% no-repeat;
   padding: 10px;
   font: normal normal normal 15px/15px Lato;
   margin-top: 10px;
@@ -76,7 +84,7 @@ nav ol li {
 
 button {
   border: none;
-  background-color: #C4C4C4;
+  background-color: var(--navbar-color);
   font-size: 1.2rem;
   font-family: Lato;
   opacity: 1;
@@ -88,7 +96,7 @@ button:hover {
 
 #sidebar {
   display: inline-block;
-  background-color: #CA5310;
+  background-color: var(--sidebar-color);
   width: 250px;
   height: 619px;
   vertical-align: top;
@@ -99,8 +107,8 @@ button:hover {
 }
 
 #btn-3:hover+#sidebar {
-  background-color: #000000;
-  color: #ffffff;
+  background-color: var(--product-secondary-color);
+  color: var(--sidebar-font-secondary-color);
   transition: 0.3s ease;
 }
 
