@@ -30,9 +30,9 @@ nav img {
 }
 
 nav ol {
+  margin-left: 80px;
   padding: 0;
   list-style: none;
-  margin-left: 80px;
 }
 
 nav ol li {
@@ -47,23 +47,23 @@ nav ol li {
 .product-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-top: 10px;
   margin-right: 50px;
   width: 100%;
   height: auto;
-  justify-content: space-evenly;
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  background: var(--product-bg-color) 0% 0% no-repeat;
   border: 1px solid var(--product-secondary-color);
   width: 200px;
   height: 300px;
-  background: var(--product-bg-color) 0% 0% no-repeat;
+  margin-top: 10px;
   padding: 10px 13px;
   font: normal normal normal 15px/15px Lato;
-  margin-top: 10px;
 }
 
 .product img {
@@ -77,14 +77,14 @@ nav ol li {
 }
 
 .product button {
-  font-size: 12px;
-  padding: 5px;
   margin-top: 10px;
+  padding: 5px;
+  font-size: 12px;
 }
 
 button {
-  border: none;
   background-color: var(--navbar-color);
+  border: none;
   font-size: 1.2rem;
   font-family: Lato;
   opacity: 1;
@@ -105,6 +105,10 @@ button:hover {
   font-size: 1.5rem;
 }
 
+label, #hamburger {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .product-container {
     margin-right: 0px;
@@ -118,6 +122,10 @@ button:hover {
 @media screen and (max-width: 1024px) {
   .product {
     width: 150px;
+  }
+
+  nav ol {
+    margin-left: 25px;
   }
 }
 
@@ -133,6 +141,10 @@ button:hover {
 
   #sidebar {
     display: none;
+  }
+
+  nav {
+    margin: 0 50px;
   }
 
   nav ol {
