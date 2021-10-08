@@ -48,6 +48,7 @@ nav ol li {
   display: flex;
   flex-wrap: wrap;
   margin-top: 10px;
+  margin-right: 50px;
   width: 100%;
   height: auto;
   justify-content: space-evenly;
@@ -57,17 +58,16 @@ nav ol li {
   display: flex;
   flex-direction: column;
   border: 1px solid var(--product-secondary-color);
-  width: 201px;
-  height: 270px;
-  text-align: left;
+  width: 200px;
+  height: 300px;
   background: var(--product-bg-color) 0% 0% no-repeat;
-  padding: 10px;
+  padding: 10px 13px;
   font: normal normal normal 15px/15px Lato;
   margin-top: 10px;
 }
 
 .product img {
-  height: 150px;
+  height: 190px;
   margin-bottom: 5px;
 }
 
@@ -95,27 +95,30 @@ button:hover {
 }
 
 #sidebar {
-  display: inline-block;
   background-color: var(--sidebar-color);
   width: 250px;
-  height: 619px;
+  height: 655px;
   vertical-align: top;
   margin-top: 20px;
-  margin-left: 50px;
+  margin-left: 39px;
   text-align: center;
   font-size: 1.5rem;
 }
 
-#btn-3:hover+#sidebar {
+#btn-3:hover {
   background-color: var(--product-secondary-color);
   color: var(--sidebar-font-secondary-color);
   transition: 0.3s ease;
 }
 
 @media screen and (max-width: 768px) {
+  .product-container {
+    margin-right: 0px;
+  }
+
   .product {
     margin-top: 10px;
-    width: 150px;
+    width: 140px;
   }
 
   #sidebar {
@@ -123,8 +126,7 @@ button:hover {
   }
 
   nav ol {
-    display: flex;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }
 
@@ -134,43 +136,57 @@ button:hover {
   }
 
   nav img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    left: 150px;
+  }
+
+  .product-container {
+    margin-right: 0px;
   }
 
   .product {
     margin-top: 10px;
+    width: 170px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav img {
+    position: absolute;
+    left: 130px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .product {
     width: 150px;
   }
 }
 
 @media screen and (max-width: 360px) {
+  nav img {
+    position: absolute;
+    left: 80px;
+  }
+
   .product-container {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    margin-right: 0px;
   }
 
   .product {
     margin-top: 10px;
-    width: 130px;
+    width: 135px;
+    height: 320px;
   }
 
   .product p {
-    margin: 3px;
+    margin: 5px;
   }
 }
 
 @media screen and (max-width: 280px) {
-  .product-container {
-    margin-bottom: 10px;
-  }
-
-  .product {
-    margin-top: 10px;
-    width: 130px;
-  }
-
   .product p {
-    margin: 3px;
+    margin: 5px;
   }
 }
