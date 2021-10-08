@@ -1,6 +1,6 @@
-var products = [];
+const products = [];
 
-for (var i = 0; i < 8; i++) {
+for (let i = 0; i < 8; i++) {
   products.push({
     title: 'Título de producto',
     img: './img/headphones_sony.jpg',
