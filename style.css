@@ -103,12 +103,6 @@ button:hover {
   color: #ffffff
 }
 
-@media screen and (max-width: 1024px) {
-  nav ol {
-    margin-left: 10px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .product {
     margin-top: 10px;
