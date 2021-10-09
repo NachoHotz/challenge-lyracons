@@ -9,7 +9,7 @@ for (let i = 0; i < 8; i++) {
   });
 }
 
-function createProduct(product) {
+const createProduct = (product) => {
   const productContainer = document.createElement('article');
   productContainer.className = 'product';
 
@@ -49,9 +49,7 @@ const button2 = document.getElementById('btn-2');
 const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
 
-function getRandomColor() {
-  return '#' + Math.floor(Math.random() * 16777215).toString(16);
-}
+const getRandomColor = () => '#' + Math.floor(Math.random() * 16777215).toString(16);
 
 button2.addEventListener('click', () => (mainContainer.style.display = 'none'));
 button3.addEventListener(
@@ -60,11 +58,9 @@ button3.addEventListener(
 );
 button4.addEventListener('click', () => (sidebar.innerHTML = 'Hola Mundo!'));
 
-function mapProducts(products) {
-  return products.map(createProduct);
-}
+const mapProducts = (products) => products.map(createProduct);
 
-function displayProducts() {
+const displayProducts = () => {
   const productsContainer = document.querySelector('.product-container');
 
   const arrayProducts = mapProducts(products);
