@@ -109,17 +109,39 @@ label, #hamburger {
   display: none;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1920px) {
   .product-container {
-    margin-right: 0px;
+    width: 53%;
   }
 
   .product {
-    width: 180px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .product-container {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .product-container {
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .product {
+    width: 200px;
   }
 }
 
 @media screen and (max-width: 1024px) {
+  .product-container {
+    width: 120%;
+    margin-right: 0px;
+  }
+
   .product {
     width: 150px;
   }
@@ -182,6 +204,13 @@ label, #hamburger {
 @media screen and (max-width: 460px) {
   .product {
     width: 150px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav img {
+    position: absolute;
+    left: 100px;
   }
 }
 
