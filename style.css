@@ -72,14 +72,13 @@ nav ol li {
 }
 
 .product p {
-  margin: 5px;
-  text-align: flex-start;
+  margin: 5px 0px;
 }
 
 .product button {
   margin-top: 10px;
   padding: 5px;
-  font-size: 12px;
+  font-size: 0.7rem;
 }
 
 button {
@@ -138,7 +137,7 @@ label, #hamburger {
 
 @media screen and (max-width: 1024px) {
   .product-container {
-    width: 120%;
+    width: 110%;
     margin-right: 0px;
   }
 
@@ -158,7 +157,6 @@ label, #hamburger {
 
   .product {
     margin-top: 10px;
-    width: 140px;
   }
 
   #sidebar {
@@ -166,11 +164,15 @@ label, #hamburger {
   }
 
   nav {
-    margin: 0 50px;
+    margin: 0 0px;
   }
 
   nav ol {
     margin-left: 0px;
+  }
+
+  nav ol li {
+    margin-left: 0.5rem;
   }
 }
 
@@ -227,17 +229,10 @@ label, #hamburger {
 
   .product {
     margin-top: 10px;
-    width: 135px;
     height: 300px;
   }
 
   .product p {
-    margin: 5px;
-  }
-}
-
-@media screen and (max-width: 280px) {
-  .product p {
-    margin: 5px;
+    margin: 5px 0px;
   }
 }
