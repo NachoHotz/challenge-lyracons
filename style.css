@@ -96,7 +96,7 @@ button:hover {
 #sidebar {
   background-color: var(--sidebar-color);
   width: 250px;
-  height: 675px;
+  height: 650px;
   vertical-align: top;
   margin-top: 20px;
   margin-left: 39px;
@@ -226,22 +226,16 @@ label, #hamburger {
     margin-top: 10px;
     width: 170px;
   }
+
+  .product button {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
   nav img {
     position: absolute;
     left: 130px;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  .product {
-    width: 150px;
-  }
-
-  .product button {
-    font-size: 0.8rem;
   }
 }
 
