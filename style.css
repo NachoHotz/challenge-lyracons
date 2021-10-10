@@ -95,8 +95,8 @@ button:hover {
 
 #sidebar {
   background-color: var(--sidebar-color);
-  width: 270px;
-  height: 655px;
+  width: 250px;
+  height: 675px;
   vertical-align: top;
   margin-top: 20px;
   margin-left: 39px;
@@ -110,28 +110,38 @@ label, #hamburger {
 
 @media screen and (max-width: 1920px) {
   .product-container {
-    width: 53%;
+    width: 65%;
   }
 
   .product {
-    width: 200px;
+    width: 241px;
   }
-}
 
-@media screen and (max-width: 1440px) {
-  .product-container {
-    width: 80%;
+  .product button {
+    font-size: 0.9rem;
+  }
+
+  #sidebar {
+    margin-left: 70px;
   }
 }
 
 @media screen and (max-width: 1366px) {
   .product-container {
-    margin-right: 20px;
-    width: 100%;
+    width: 80%;
+    margin-left: 20px;
   }
 
   .product {
     width: 200px;
+  }
+
+  .product button {
+    font-size: 0.9rem;
+  }
+
+  #sidebar {
+    margin-left: 100px;
   }
 }
 
@@ -207,12 +217,24 @@ label, #hamburger {
   .product {
     width: 150px;
   }
+
+  .product button {
+    font-size: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
   nav img {
     position: absolute;
     left: 100px;
+  }
+
+  .product {
+    width: 130px
+  }
+
+  .product button {
+    font-size: 0.9rem;
   }
 }
 
