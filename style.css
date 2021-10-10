@@ -170,6 +170,7 @@ label, #hamburger {
 
   .product-container {
     width: 110%;
+    margin-left: 0px;
     margin-right: 0px;
   }
 
@@ -224,6 +225,7 @@ label, #hamburger {
 
   .product {
     margin-top: 10px;
+    padding-bottom: 15px;
     width: 170px;
   }
 
@@ -237,23 +239,36 @@ label, #hamburger {
     position: absolute;
     left: 130px;
   }
+
+  .product-container {
+    gap: 0.5rem;
+  }
+
+  .product {
+    padding-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 375px) {
   nav img {
     position: absolute;
-    left: 100px;
+    left: 90px;
+  }
+
+  .product {
+    width: 140px;
+    padding-bottom: 15px;
   }
 
   .product button {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (max-width: 360px) {
   nav img {
     position: absolute;
-    left: 80px;
+    left: 70px;
   }
 
   .product-container {
@@ -263,10 +278,23 @@ label, #hamburger {
 
   .product {
     margin-top: 10px;
+    padding-bottom: 5px;
     height: 300px;
   }
 
   .product p {
     margin: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  nav img {
+    position: absolute;
+    left: 60px;
+  }
+
+  .product {
+    padding-bottom: 0px;
+    width: 125px;
   }
 }
