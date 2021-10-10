@@ -71,6 +71,10 @@ nav ol li {
   margin-bottom: 5px;
 }
 
+.productTitle {
+  font-weight: bold;
+}
+
 .product p {
   margin: 5px 0px;
 }

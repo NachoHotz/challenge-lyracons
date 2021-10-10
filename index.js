@@ -14,7 +14,6 @@ const createProduct = (product) => {
   productContainer.className = 'product';
 
   const productImg = document.createElement('img');
-  productImg.id = 'img';
   productImg.src = product.img;
   productImg.alt = 'product';
 
@@ -26,11 +25,9 @@ const createProduct = (product) => {
   productBrand.textContent = product.brand;
 
   const productPrice = document.createElement('p');
-  productPrice.id = 'price';
   productPrice.textContent = `$ ${product.price}`;
 
   const productBtn = document.createElement('button');
-  productBtn.id = 'productBtn';
   productBtn.textContent = 'COMPRAR';
 
   productContainer.appendChild(productImg);
