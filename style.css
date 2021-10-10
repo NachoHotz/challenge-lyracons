@@ -30,7 +30,7 @@ nav img {
 }
 
 nav ol {
-  margin-left: 40px;
+  margin-left: 45px;
   padding: 0;
   list-style: none;
 }
@@ -60,7 +60,7 @@ nav ol li {
   background: var(--product-bg-color) 0% 0% no-repeat;
   border: 1px solid var(--product-secondary-color);
   width: 200px;
-  height: 300px;
+  height: 280px;
   margin-top: 10px;
   padding: 10px 13px;
   font: normal normal normal 15px/15px Lato;
@@ -76,8 +76,8 @@ nav ol li {
 }
 
 .product button {
-  margin-top: 10px;
-  padding: 5px;
+  margin-top: 0px;
+  padding: 3px;
   font-size: 0.7rem;
 }
 
@@ -96,7 +96,7 @@ button:hover {
 #sidebar {
   background-color: var(--sidebar-color);
   width: 250px;
-  height: 650px;
+  height: 620px;
   vertical-align: top;
   margin-top: 20px;
   margin-left: 39px;
@@ -146,7 +146,7 @@ label, #hamburger {
   }
 
   .product button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   #sidebar {
