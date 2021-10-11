@@ -41,13 +41,16 @@ const createProduct = (product) => {
 
 const mainContainer = document.querySelector('.main-container');
 const sidebar = document.getElementById('sidebar');
+const subMenu = document.querySelector('.sub-menu');
 
+const button1 = document.getElementById('btn-1');
 const button2 = document.getElementById('btn-2');
 const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
 
 const getRandomColor = () => '#' + Math.floor(Math.random() * 16777215).toString(16);
 
+button1.addEventListener('click', () => subMenu.style.display = 'flex')
 button2.addEventListener('click', () => (mainContainer.style.display = 'none'));
 button3.addEventListener(
   'mouseover',
