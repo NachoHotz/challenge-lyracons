@@ -40,6 +40,7 @@ const createProduct = (product) => {
 }
 
 const mainContainer = document.querySelector('.main-container');
+const productsContainer = document.querySelector('.product-container');
 const sidebar = document.getElementById('sidebar');
 const subMenu = document.querySelector('.sub-menu');
 
@@ -47,6 +48,19 @@ const button1 = document.getElementById('btn-1');
 const button2 = document.getElementById('btn-2');
 const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
+
+const hamMenu = document.getElementById('hamburger');
+const navItems = document.querySelector('.nav-items');
+
+hamMenu.onchange = (e) => {
+  if(hamMenu.checked) {
+    productsContainer.style.display = 'none';
+    navItems.style.display = 'block';
+  } else {
+    productsContainer.style.display = 'flex';
+    navItems.style.display = 'none';
+  }
+}
 
 const getRandomColor = () => '#' + Math.floor(Math.random() * 16777215).toString(16);
 

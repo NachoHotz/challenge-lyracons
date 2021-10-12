@@ -29,13 +29,13 @@ nav img {
   margin: 0.8rem;
 }
 
-nav ol {
+nav #main-list {
   margin-left: 45px;
   padding: 0;
   list-style: none;
 }
 
-nav ol li {
+nav #main-list li {
   display: block;
   margin-left: 20px;
   float: left;
@@ -125,7 +125,11 @@ button:hover {
   font-size: 1.5rem;
 }
 
-label, #hamburger {
+label {
+  display: none;
+}
+
+#hamburger {
   display: none;
 }
 
@@ -138,7 +142,7 @@ label, #hamburger {
     width: 170px;
   }
 
-  nav ol {
+  nav #main-list {
     margin-left: 100px;
   }
 
@@ -205,45 +209,64 @@ label, #hamburger {
     width: 150px;
   }
 
-  nav ol {
+  nav #main-list {
     margin-left: 25px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .product-container {
-    margin-right: 0px;
+    width: 130%;
   }
 
   .product {
     margin-top: 10px;
   }
 
-  #sidebar {
-    display: none;
-  }
-
   nav {
     margin: 0 0px;
   }
 
-  nav ol {
+  nav #main-list {
     margin-left: 0px;
   }
 
-  nav ol li {
+  nav #main-list li {
     margin-left: 0.5rem;
+  }
+
+  #sidebar {
+    margin-left: 10px;
   }
 }
 
 @media screen and (max-width: 540px) {
-  nav ol {
+  nav #main-list {
     display: none;
+  }
+
+  .nav-items {
+    display: none;
+    margin-left: 30px;
+  }
+
+  .nav-items h3 {
+    margin-top: 40px;
+    cursor: pointer;
   }
 
   nav img {
     position: absolute;
     left: 150px;
+  }
+
+  label {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    font-style: normal;
+    font-size: 2rem;
   }
 
   .product-container {
@@ -258,6 +281,10 @@ label, #hamburger {
 
   .product button {
     font-size: 0.9rem;
+  }
+
+  #sidebar {
+    display: none;
   }
 }
 
@@ -317,7 +344,7 @@ label, #hamburger {
 @media screen and (max-width: 320px) {
   nav img {
     position: absolute;
-    left: 60px;
+    left: 70px;
   }
 
   .product {
