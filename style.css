@@ -6,10 +6,20 @@
   --sidebar-font-secondary-color: #FFFFFF;
 }
 
-body {
+@font-face {
   font-family: Lato;
+  src: url('./font-lato/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: LatoBold;
+  src: url('./font-lato/Lato-Bold.ttf');
+}
+
+body {
   margin: 0;
   padding: 0;
+  font-family: LatoBold;
 }
 
 header {
@@ -88,8 +98,8 @@ nav #main-list li {
   margin-bottom: 5px;
 }
 
-.productTitle {
-  font-weight: bold;
+#productTitle {
+  font-family: LatoBold;
 }
 
 .product p {
@@ -100,13 +110,14 @@ nav #main-list li {
   margin-top: 0px;
   padding: 3px;
   font-size: 0.7rem;
+  font-family: LatoBold;
 }
 
 button {
   background-color: var(--navbar-color);
   border: none;
   font-size: 1.2rem;
-  font-family: Lato;
+  font-family: LatoBold;
   opacity: 1;
 }
 
@@ -269,8 +280,9 @@ label {
   }
 
   .sub-menu li {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 0px;
+    font-size: 1.1rem;
   }
 
   nav img {
