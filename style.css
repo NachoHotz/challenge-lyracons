@@ -40,7 +40,6 @@ nav img {
 }
 
 nav #main-list {
-  margin-left: 45px;
   padding: 0;
   list-style: none;
 }
@@ -162,7 +161,7 @@ label {
   }
 
   nav #main-list {
-    margin-left: 100px;
+    margin-left: 110px;
   }
 
   nav #main-list button {
@@ -202,8 +201,18 @@ label {
 }
 
 @media screen and (max-width: 1440px) {
+  nav #main-list {
+    margin-left: 65px;
+  }
+
   .product {
     width: 205px;
+  }
+}
+
+@media screen and (width: 1366px) {
+  nav #main-list {
+    margin-left: 50px;
   }
 }
 
