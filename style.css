@@ -44,6 +44,7 @@ nav #main-list li {
 .sub-menu {
   display: none;
   flex-direction: column;
+  position: relative;
   padding: 0;
   margin: 0;
   width: 103%;
