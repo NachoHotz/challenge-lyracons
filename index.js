@@ -49,12 +49,12 @@ const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
 
 const hamMenu = document.getElementById('hamburger');
-const navItems = document.querySelector('.nav-items');
+const navItems = document.querySelector('#main-list');
 
 hamMenu.onchange = (e) => {
   if(hamMenu.checked) {
     productsContainer.style.display = 'none';
-    navItems.style.display = 'block';
+    navItems.style.display = 'flex';
   } else {
     productsContainer.style.display = 'flex';
     navItems.style.display = 'none';

@@ -251,16 +251,26 @@ label {
 @media screen and (max-width: 540px) {
   nav #main-list {
     display: none;
-  }
-
-  .nav-items {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
     margin-left: 30px;
   }
 
-  .nav-items h3 {
+  button {
+    background-color: var(--sidebar-font-secondary-color);
     margin-top: 40px;
-    cursor: pointer;
+  }
+
+  .sub-menu {
+    background-color: var(--sidebar-font-secondary-color);
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .sub-menu li {
+    margin-top: 20px;
+    margin-bottom: 0px;
   }
 
   nav img {
@@ -289,6 +299,7 @@ label {
 
   .product button {
     font-size: 0.9rem;
+    background-color: var(--navbar-color);
   }
 
   #sidebar {
