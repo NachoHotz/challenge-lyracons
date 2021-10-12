@@ -46,15 +46,14 @@ nav #main-list li {
   flex-direction: column;
   padding: 0;
   margin: 0px;
-  width: 95%;
+  width: 112%;
   background-color: var(--navbar-color);
 }
 
 .sub-menu li {
   padding: 0;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 5px;
-  margin-left: 15px;
 }
 
 .main-container {
@@ -130,6 +129,12 @@ label {
 }
 
 #hamburger {
+  display: none;
+}
+
+#btn-1:hover + .sub-menu { display: flex; }
+
+.nav-items {
   display: none;
 }
 
