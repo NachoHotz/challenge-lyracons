@@ -133,7 +133,9 @@ label {
   display: none;
 }
 
-#btn-1:hover + .sub-menu { display: flex; }
+#btn-1:hover + .sub-menu {
+  display: flex;
+}
 
 .nav-items {
   display: none;
