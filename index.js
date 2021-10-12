@@ -49,7 +49,7 @@ const button3 = document.getElementById('btn-3');
 const button4 = document.getElementById('btn-4');
 
 const hamMenu = document.getElementById('hamburger');
-const navItems = document.querySelector('#main-list');
+const navItems = document.getElementById('main-list');
 
 hamMenu.onchange = (e) => {
   if(hamMenu.checked) {
