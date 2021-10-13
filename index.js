@@ -54,8 +54,10 @@ const navItems = document.getElementById('main-list');
 hamMenu.onchange = (e) => {
   if(hamMenu.checked) {
     productsContainer.style.display = 'none';
+    navItems.style.display = 'flex';
   } else {
     productsContainer.style.display = 'flex';
+    navItems.style.display = 'none';
   }
 }
 
