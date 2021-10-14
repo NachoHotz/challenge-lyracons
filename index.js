@@ -25,7 +25,7 @@ const createProduct = (product) => {
   productBrand.textContent = product.brand;
 
   const productPrice = document.createElement('p');
-  productPrice.textContent = `${product.price}`;
+  productPrice.textContent = product.price;
 
   const productBtn = document.createElement('button');
   productBtn.textContent = 'COMPRAR';
