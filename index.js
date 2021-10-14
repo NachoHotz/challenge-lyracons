@@ -5,7 +5,7 @@ for (let i = 0; i < 8; i++) {
     title: 'Título de producto',
     img: './img/headphones_sony.jpg',
     brand: 'Marca',
-    price: '12.345,00',
+    price: '$ 12.345,00',
   });
 }
 
@@ -25,7 +25,7 @@ const createProduct = (product) => {
   productBrand.textContent = product.brand;
 
   const productPrice = document.createElement('p');
-  productPrice.textContent = `$ ${product.price}`;
+  productPrice.textContent = `${product.price}`;
 
   const productBtn = document.createElement('button');
   productBtn.textContent = 'COMPRAR';
