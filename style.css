@@ -169,6 +169,7 @@ label {
 
   nav #main-list button {
     font-size: 1.5rem;
+    margin-left: 10px;
   }
 
   .main-container {
@@ -198,7 +199,7 @@ label {
   #sidebar {
     margin-left: 100px;
     width: 350px;
-    height: 875px;
+    height: 820px;
     font-size: 2rem;
   }
 }
