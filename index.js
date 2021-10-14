@@ -42,7 +42,6 @@ const createProduct = (product) => {
 const mainContainer = document.querySelector('.main-container');
 const productsContainer = document.querySelector('.product-container');
 const sidebar = document.getElementById('sidebar');
-const subMenu = document.querySelector('.sub-menu');
 
 const button2 = document.getElementById('btn-2');
 const button3 = document.getElementById('btn-3');
@@ -51,7 +50,7 @@ const button4 = document.getElementById('btn-4');
 const hamMenu = document.getElementById('hamburger');
 const navItems = document.getElementById('main-list');
 
-hamMenu.onchange = (e) => {
+hamMenu.onchange = () => {
   if(hamMenu.checked) {
     productsContainer.style.display = 'none';
     navItems.style.display = 'flex';
@@ -64,10 +63,7 @@ hamMenu.onchange = (e) => {
 const getRandomColor = () => '#' + Math.floor(Math.random() * 16777215).toString(16);
 
 button2.addEventListener('click', () => (mainContainer.style.display = 'none'));
-button3.addEventListener(
-  'mouseover',
-  () => (sidebar.style.backgroundColor = getRandomColor()),
-);
+button3.addEventListener( 'mouseover', () => (sidebar.style.backgroundColor = getRandomColor()));
 button4.addEventListener('click', () => (sidebar.innerHTML = 'Hola Mundo!'));
 
 const mapProducts = (products) => products.map(createProduct);
